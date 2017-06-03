@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors game</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
+</head>
+<body>
+    <div class="game">
+       <div id="info">
+           <p id="playerInfo">You points:</p>
+           <p id="playerPoints">0</p>
+           <p id="oponentInfo">Oponent points:</p>
+           <p id="oponentPoints">0</p>
+       </div>
+       <div class="oponentCards">
+           <img src="img/cardback.png"/>
+           <img src="img/cardback.png"/>
+           <img src="img/cardback.png"/>
+       </div>
+       <div class="oponentCard">
+           <img id="oponentCardImage" src="img/cardback.png"/>
+       </div>
+       <div id="resultSection">
+           <p id="result">For start play choose your card</p>
+       </div>
+       <div class="playerCard">
+           <img id="playerCardImage" src="img/cardback.png"/>
+       </div>
+        <div id="playerMenu">
+            <figure id="rock">
+                <img src="img/rockCard.png">
+                <figcaption>Rock!</figcaption>
+            </figure>
+            <figure id="scissors">
+                <img src="img/scissorsCard.png">
+                <figcaption>Scissors!</figcaption>
+            </figure>
+            <figure id="paper">    
+                <img src="img/paperCard.png">
+                <figcaption>Paper!</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
+<link rel="stylesheet" href="style/styles.css">
+<script src="script/main.js"></script>
+<script src="script/fight.js"></script>
+<script src="script/cpu.js"></script>
+<script src="script/endGame.js"></script>
+<script src="script/playerChooseView.js"></script>
+<script src="script/oponentChoiseView.js"></script>

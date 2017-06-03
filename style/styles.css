@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes animationResult {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'lato';
+    font-weight: 700;
+    color: #344146;
+    background-color: #282830;
+}
+
+.game {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: #FFFFF7;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 90%;
+    margin: 0 auto;
+}
+
+#playerInfo {
+    
+}
+
+#oponentInfo {
+    
+}
+
+.oponentCards{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.oponentCards img{
+    position: relative;
+    top: -32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 15%;
+    height: 15%;
+}
+
+.oponentCard {
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    text-align: center;
+}
+
+.oponentCard img {
+    width: 25%;
+}
+
+#resultSection {
+    display: flex;
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    top:40%;
+    justify-content: center;
+}
+
+#result {
+    text-align: center;
+    max-height: 72px;
+    -webkit-animation-name: animationResult;
+    -o-animation-name: animationResult;
+    -moz-animation-name: animationResult;
+    animation-name: animationResult;
+    
+    -webkit-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.playerCard {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+}
+
+.playerCard img {
+    width: 25%;
+}
+
+#playerMenu {
+    display: flex;
+    position: absolute;
+    bottom: 24px;
+    left: 30%;
+    width: 40%;
+    justify-content: center;
+}
+
+#playerMenu figure img {
+    display: flex;
+    width: 50%;
+    cursor: pointer;
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -webit-transform: scale(1);
+    
+    -webkit-transition: 0.1s all linear;
+    -o-transition: 0.1s all linear;
+    -moz-transition: 0.1s all linear;
+    transition: 0.1s all linear;
+}
+
+#playerMenu figure img:hover {
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1));
+    -moz-transform: scale(1.1));
+    -webit-transform: scale(1.1));
+    
+    -webkit-transition: 0.1s all linear;
+    -o-transition: 0.1s all linear;
+    -moz-transition: 0.1s all linear;
+    transition: 0.1s all linear;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'lato';
+    font-weight: 700;
+    color: #344146;
+}
+
