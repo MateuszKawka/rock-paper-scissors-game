@@ -10,7 +10,7 @@ var fight = function (player, oponent) {
             playerPointsSection.innerHTML = playerPoints; // update points view
             result.innerHTML = "You win!"; // Present fight result
             //Same things for other if's 
-        } else {
+        } else if (oponent === "paper") {
             // paper wins
             ++oponentPoints;
             oponentPointsSection.innerHTML = playerPoints;
@@ -23,7 +23,7 @@ var fight = function (player, oponent) {
             ++playerPoints;
             playerPointsSection.innerHTML = playerPoints;
             result.innerHTML = "You win!";
-        } else {
+        } else if (oponent === "scissors") {
             // scissors wins
             ++oponentPoints;
             oponentPointsSection.innerHTML = playerPoints;
@@ -37,7 +37,7 @@ var fight = function (player, oponent) {
             playerPointsSection.innerHTML = playerPoints;
             result.innerHTML = "You win!";
 
-        } else {
+        } else if (oponent === "rock") {
             // rock wins
             ++oponentPoints;
             oponentPointsSection.innerHTML = playerPoints;
